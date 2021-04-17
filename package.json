@@ -1,0 +1,19 @@
+{
+  "name": "education-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doing-art/education-webpack.git"
+  },
+  "author": "Paramonov Nickolay (https://github.com/doing-art)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doing-art/education-webpack/issues"
+  },
+  "homepage": "https://github.com/doing-art/education-webpack#readme"
+}
