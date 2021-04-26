@@ -1,0 +1,31 @@
+@import "normalize.css";
+@import "fonts.css";
+
+html,
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  position: relative;
+  padding-top: 67.368%;
+  background-image: url("../assets/images/post-image.jpeg");
+  background-size: cover;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.code {
+  color: green;
+}

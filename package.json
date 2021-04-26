@@ -2,9 +2,13 @@
   "name": "education-webpack",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "cross-env NODE_ENV=development webpack",
+    "build": "cross-env NODE_ENV=production webpack",
+    "watch": "cross-env NODE_ENV=development webpack --watch",
+    "start": "cross-env NODE_ENV=development webpack serve --hot",
+    "stats": "webpack --json > stats.json && webpack-bundle-analyzer stats.json"
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,38 @@
   "bugs": {
     "url": "https://github.com/doing-art/education-webpack/issues"
   },
-  "homepage": "https://github.com/doing-art/education-webpack#readme"
+  "homepage": "https://github.com/doing-art/education-webpack#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-transform-runtime": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-react": "^7.13.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^8.1.1",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.2",
+    "extract-css-chunks-webpack-plugin": "^4.9.0",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.5.0",
+    "node-sass": "^5.0.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.1.1",
+    "webpack": "^5.33.2",
+    "webpack-bundle-analyzer": "^4.4.1",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "core-js": "^3.11.0",
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
+    "normalize.css": "^8.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
 }
