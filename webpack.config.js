@@ -11,6 +11,7 @@ const isDev = process.env.NODE_ENV === "development";
 const isProd = process.env.NODE_ENV === "production";
 
 const config = {
+  target: isDev ? "web" : "browserslist",
   context: path.resolve(__dirname, "src"),
   mode: process.env.NODE_ENV,
   devtool: isDev ? "source-map" : undefined,
